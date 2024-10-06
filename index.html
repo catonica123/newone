@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Structure Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #007BFF;
+            /* Blue background */
+            color: white;
+            /* White text */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            /* White text */
+            margin: 0 15px;
+            /* Space between links */
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        main {
+            padding: 20px;
+            background: white;
+            /* White background for the main content */
+            margin: 10px;
+            /* Space around the main content */
+            border-radius: 5px;
+            /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+        }
+
+        section,
+        article,
+        aside,
+        details,
+        figure {
+            margin-bottom: 20px;
+            /* Space between sections */
+            padding: 10px;
+            /* Inner padding */
+            border: 1px solid #ccc;
+            /* Border around sections */
+            border-radius: 5px;
+            /* Rounded corners */
+        }
+
+        footer {
+            background: #333;
+            /* Dark background */
+            color: white;
+            /* White text */
+            text-align: center;
+            /* Centered text */
+            padding: 10px;
+            /* Padding around footer */
+            position: relative;
+            /* Relative positioning for footer */
+            bottom: 0;
+            /* Keep footer at the bottom */
+            width: 100%;
+            /* Full width */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+
+            <p>This is a section that provides information about the website.</p>
+
+
+            <article>
+                <h3>Latest News</h3>
+                <p>Here you can find the latest news articles.</p>
+                <figure>
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                    <figcaption>This is a caption for the image.</figcaption>
+                </figure>
+            </article>
+
+        </section>
+
+        <aside>
+            <h3>Additional Information</h3>
+            <p>This is some additional information that complements the main content.</p>
+        </aside>
+
+        <details>
+            <summary>Click here for more details</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus officia sit laboriosam
+                obcaecati minima deleniti porro quos harum repudiandae pariatur libero, ut consectetur optio? Quidem
+                dolor tenetur pariatur aspernatur?</p>
+        </details>
+
+        <address>
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out to us:</p>
+            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+        </address>
+
+        <section>
+            <h2>Time Information</h2>
+            <p>The following time is displayed:</p>
+            <time datetime="2024-10-01">October 1, 2024</time>
+        </section>
+
+        <section>
+            <!-- Button to open the dialog -->
+            <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+
+            <!-- Dialog Box -->
+            <dialog id="myDialog">
+                <h2>Dialog Title</h2>
+                <p>This is a simple dialog box example. You can put any content here.</p>
+                <button onclick="document.getElementById('myDialog').close()">Close</button>
+            </dialog>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+        <p><a href="#privacy-policy">Privacy Policy</a></p>
+    </footer>
+
+</body>
+
+</html>
